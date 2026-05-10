@@ -15,6 +15,11 @@ var P2 = function (){
     var SecInWeek = SecInDay * DayInWeek
     var MinInWeek = MinInDay * DayInWeek
     var HourInWeek = HourInDay * DayInWeek
+    var DayInYear = 365
+    var SecInYear = SecInDay * DayInYear
+    var MinInYear = MinInDay * DayInYear
+    var HourInYear = HourInDay * DayInYear
+    var currentYear = 2026
     console.log("There are "+SecInMin+" seconds in a minute")
     console.log("There are "+MinInHour+" minutes in an hour")
     console.log("There are "+SecInHour+" seconds in an hour")
@@ -25,8 +30,32 @@ var P2 = function (){
     console.log("There are "+SecInWeek+" seconds in a week")
     console.log("There are "+MinInWeek+" minutes in a week")
     console.log("There are "+HourInWeek+" hours in a week")
+    console.log("There are "+DayInYear+" days in a year")
+    console.log("There are "+SecInYear+" seconds in a year")
+    console.log("There are "+MinInYear+" minutes in a year")
+    console.log("There are "+HourInYear+" hours in a year")
+    console.log("I am aproximately "+((currentYear-2014)*SecInYear)+" seconds old")
+}
+
+var OP1 = function (){
+    console.log("Hello world")
+}
+
+var P3 = function (){
+    var HighFives = 0
+    console.log(++HighFives)
+    console.log(++HighFives)
+    console.log(--HighFives)
+    console.log("Delayed:")
+    console.log(HighFives++)
+    console.log(HighFives++)
+    console.log(HighFives--)
+    console.log(HighFives)
 }
 
 console.log("HubBase-onJS 0.0.1.0.00 (default, May 09 2026, 21:59:14)")
 P1(10)
 P2()
+P3()
+console.log("Original programms:")
+OP1()
